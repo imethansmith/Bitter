@@ -14,7 +14,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return 1
     }
     
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return coinManager.currencyArray.count
     }
@@ -37,6 +36,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
     }
 
-
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        currentCurrency.text = "1 \(coinManager.currencyArray[row])"
+    }
 }
 
