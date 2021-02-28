@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    let coinManager = CoinManager()
+    var coinManager = CoinManager()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -22,22 +22,41 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return coinManager.currencyArray[row]
     }
     
-    @IBOutlet weak var currentCurrency: UILabel!
     @IBOutlet weak var currentBTCPrice: UILabel!
+    @IBOutlet weak var currentCurrency: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        coinManager.delegate = self
         // Do any additional setup after loading the view.
         
-        
+        coinManager.getCoinPrice(forCurrency: "NZD")
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        currentCurrency.text = "1 \(coinManager.currencyArray[row])"
+        let currencyType = coinManager.currencyArray[row]
+        currentCurrency.text = "1 \(currencyType)"
+        coinManager.getCoinPrice(forCurrency: currencyType)
     }
 }
 
+extension ViewController: CoinManagerDelegate {
+    
+    func didUpdateCoin(_ coinManager: CoinManager, _ coinModel: CoinModel) {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+    
+        DispatchQueue.main.async {
+            self.currentBTCPrice.text = "\(formatter.string(from: NSNumber(value: Int(coinModel.rate))) ?? "0") BTC"
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+        print("Failed")
+    }
+}

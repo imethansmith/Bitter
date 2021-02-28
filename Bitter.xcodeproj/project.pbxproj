@@ -16,6 +16,8 @@
 		3E65DA1E25E8D9CB00760785 /* BitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA1D25E8D9CB00760785 /* BitterTests.swift */; };
 		3E65DA2925E8D9CB00760785 /* BitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA2825E8D9CB00760785 /* BitterUITests.swift */; };
 		3E65DA4925E8E63500760785 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA4825E8E63500760785 /* CoinManager.swift */; };
+		3E65DA4E25EB504300760785 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA4D25EB504300760785 /* CoinModel.swift */; };
+		3E65DA5325EB513500760785 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA5225EB513500760785 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3E65DA2825E8D9CB00760785 /* BitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitterUITests.swift; sourceTree = "<group>"; };
 		3E65DA2A25E8D9CB00760785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E65DA4825E8E63500760785 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		3E65DA4D25EB504300760785 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		3E65DA5225EB513500760785 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				3E65DA4825E8E63500760785 /* CoinManager.swift */,
+				3E65DA5225EB513500760785 /* CoinData.swift */,
+				3E65DA4D25EB504300760785 /* CoinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E65DA5325EB513500760785 /* CoinData.swift in Sources */,
+				3E65DA4E25EB504300760785 /* CoinModel.swift in Sources */,
 				3E65DA4925E8E63500760785 /* CoinManager.swift in Sources */,
 				3E65DA0B25E8D9C800760785 /* ViewController.swift in Sources */,
 				3E65DA0725E8D9C800760785 /* AppDelegate.swift in Sources */,
