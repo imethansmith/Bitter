@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E65DA0725E8D9C800760785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA0625E8D9C800760785 /* AppDelegate.swift */; };
 		3E65DA0925E8D9C800760785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA0825E8D9C800760785 /* SceneDelegate.swift */; };
-		3E65DA0B25E8D9C800760785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA0A25E8D9C800760785 /* ViewController.swift */; };
+		3E65DA0B25E8D9C800760785 /* BitcoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65DA0A25E8D9C800760785 /* BitcoinViewController.swift */; };
 		3E65DA0E25E8D9C800760785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E65DA0C25E8D9C800760785 /* Main.storyboard */; };
 		3E65DA1025E8D9CB00760785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E65DA0F25E8D9CB00760785 /* Assets.xcassets */; };
 		3E65DA1325E8D9CB00760785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E65DA1125E8D9CB00760785 /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		3E65DA0325E8D9C800760785 /* Bitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E65DA0625E8D9C800760785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E65DA0825E8D9C800760785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E65DA0A25E8D9C800760785 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E65DA0A25E8D9C800760785 /* BitcoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinViewController.swift; sourceTree = "<group>"; };
 		3E65DA0D25E8D9C800760785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E65DA0F25E8D9CB00760785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E65DA1225E8D9CB00760785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		3E65DA3B25E8E39C00760785 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3E65DA0A25E8D9C800760785 /* ViewController.swift */,
+				3E65DA0A25E8D9C800760785 /* BitcoinViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				3E65DA5325EB513500760785 /* CoinData.swift in Sources */,
 				3E65DA4E25EB504300760785 /* CoinModel.swift in Sources */,
 				3E65DA4925E8E63500760785 /* CoinManager.swift in Sources */,
-				3E65DA0B25E8D9C800760785 /* ViewController.swift in Sources */,
+				3E65DA0B25E8D9C800760785 /* BitcoinViewController.swift in Sources */,
 				3E65DA0725E8D9C800760785 /* AppDelegate.swift in Sources */,
 				3E65DA0925E8D9C800760785 /* SceneDelegate.swift in Sources */,
 			);
