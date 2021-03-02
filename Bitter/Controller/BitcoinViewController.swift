@@ -46,6 +46,7 @@ class BitcoinViewController: UIViewController {
         coinManager.getCoinPrice(forCurrency: currencyType)
     }
     
+    //MARK: - UI Animation Section
     
     // Load updated BTC count with animation
     func updateBTCCount() {
@@ -56,8 +57,6 @@ class BitcoinViewController: UIViewController {
         }
         self.displayLink.add(to: .current, forMode: .default)
     }
-    
-    //MARK: - UI Animation Section
     
     // Increase to higher value BTC
     @objc func tickUp() {
